@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 
 const Detail = () => {
   const { id } = useParams();
-console.log(id); // Check if it prints the movie ID correctly
+console.log(id); 
 
   const [movie, setMovie] = useState(null);
 
@@ -17,7 +17,7 @@ console.log(id); // Check if it prints the movie ID correctly
     };
   
     fetchMovieDetails();
-  }, [id]); // Re-run when 'id' changes 
+  }, [id]); 
 
 
   if (!movie) return <p>Loading...</p>;
