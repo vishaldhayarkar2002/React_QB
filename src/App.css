@@ -9,6 +9,8 @@
   justify-items: center;
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.068); /* Slight background for contrast */
+  overflow-y: auto; /* Allows scrolling */
+  max-height: 100%; /* Ensure it takes full height of parent */
 }
 
 .MovieList .movie {
