@@ -10,7 +10,7 @@ console.log(id);
   useEffect(() => {
     const fetchMovieDetails = async () => {
       const response = await fetch(
-        `https://api.themoviedb.org/3/movie/${id}?api_key=f43ec82a5f24fe6190891894b7436c7a`
+        `https://api.themoviedb.org/3/movie/${id}?api_key=${process.env.REACT_APP_TMDB_API_KEY}`
       );
       const data = await response.json();
       setMovie(data);
